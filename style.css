@@ -109,6 +109,15 @@ body {
   align-content: center;
 }
 
+.profile-link:hover {
+  background-color: var(--green);
+  color: var(--grey-900);
+}
+
+.profile-link:last-child {
+  margin: 0 var(--spacing-300) var(--spacing-300);
+}
+
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
@@ -122,10 +131,6 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
-}
-
-.profile-link:last-child {
-  margin: 0 var(--spacing-300) var(--spacing-300);
 }
 
 @media (min-width: 768px) {
