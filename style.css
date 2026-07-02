@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --grey-900: #141414;
+  --grey-800: #1f1f1f;
+  --grey-700: #333333;
+  --green: #c4f82a;
+  --white: #ffffff;
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-50: 4px;
+  --font-main: "Inter", sans-serif;
+  --weight-regular: 250;
+  --weight-bold: 600;
+  --font-size-p1: 24px;
+  --font-size-p2: 14px;
+  --lh-preset: 1.5;
+}
+
+.text-preset-1 {
+  font-family: var(--font-main);
+  font-size: var(--font-size-p1);
+  font-weight: var(--weight-bold);
+  line-height: var(--lh-preset);
+}
+
+.text-preset-2 {
+  font-family: var(--font-main);
+  font-size: var(--font-size-p2);
+  font-weight: var(--weight-regular);
+  line-height: var(--lh-preset);
+}
+
+.text-preset-2-bold {
+  font-family: var(--font-main);
+  font-size: var(--font-size-p2);
+  font-weight: var(--weight-bold);
+  line-height: var(--lh-preset);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--grey-900);
+}
+
+.profile-card {
+  margin: var(--spacing-500) var(--spacing-300);
+  background-color: var(--grey-800);
+  border-radius: var(--spacing-150);
+  text-align: center;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-picture {
+  border-radius: 999px;
+  height: 88px;
+  width: 88px;
+  margin-top: var(--spacing-300);
+}
+
+.name {
+  color: var(--white);
+  margin: var(--spacing-300) var(--spacing-300) var(--spacing-50);
+}
+
+.localization {
+  color: var(--green);
+  margin: 0 var(--spacing-300);
+}
+
+.role {
+  color: var(--white);
+  margin: var(--spacing-300);
+}
+
+.profile-link {
+  background-color: var(--grey-700);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: var(--spacing-150);
+  margin: 0 var(--spacing-300) var(--spacing-200);
+  height: 45px;
+  text-align: center;
+  align-content: center;
+}
+
+.profile-link:last-child {
+  margin: 0 var(--spacing-300) var(--spacing-300);
+}
+
+@media (min-width: 768px) {
+  .profile-card {
+  }
+}
+
+@media (min-width: 1024px) {
+}
